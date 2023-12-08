@@ -12,18 +12,18 @@ export const useFetchRecipientUser = (chat, user) =>{
     useEffect(()=>{
         const getUser = async() =>{
             if(!recipientId) return null
-
+            console.log(`Fetching user with ID: ${recipientId}`);
             const response = await getRequest(`${baseUrl}/users/${recipientId}`)
 
             if (response.error){
-                return setError(response) 
+                return setError(error) 
             }
             
             setRecipientUser(response)
         }
 
         getUser();
-    },[])
+    },[recipientId])
 
     return {recipientUser}
 }
