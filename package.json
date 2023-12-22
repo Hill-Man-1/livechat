@@ -1,0 +1,53 @@
+{
+	"name": "medify",
+	"version": "1.0.0",
+	"description": "Application where patients can keep track of their medical histories, book a doctor appointment, and consult online.",
+	"main": "dist/app.js",
+	"scripts": {
+		"build": "npx tsc",
+		"start": "node dist/app.js",
+		"dev": "concurrently \"npx tsc --watch\" \"nodemon dist/app.js\""
+	},
+	"keywords": [
+		"mongoose",
+		"typescript",
+		"jsonwebtoken",
+		"bcrypt",
+		"cookie"
+	],
+	"author": "Hananjaya, Hill-Man-1, SherinOlivia",
+	"license": "ISC",
+	"dependencies": {
+		"@types/cookie-parser": "^1.4.6",
+		"bcrypt": "^5.1.1",
+		"concurrently": "^8.2.2",
+		"cookie-parser": "^1.4.6",
+		"cors": "^2.8.5",
+		"date-fns": "^2.30.0",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"helmet": "^7.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongodb": "^6.3.0",
+		"mongoose": "^8.0.3",
+		"morgan": "^1.10.0",
+		"node-cache": "^5.1.2",
+		"nodemailer": "^6.9.7",
+		"uuid": "^9.0.1",
+		"validator": "^13.11.0"
+	},
+	"devDependencies": {
+		"@types/bcrypt": "^5.0.2",
+		"@types/cookie-parser": "^1.4.6",
+		"@types/cors": "^2.8.17",
+		"@types/express": "^4.17.21",
+		"@types/jsonwebtoken": "^9.0.5",
+		"@types/morgan": "^1.9.9",
+		"@types/node": "^20.10.3",
+		"@types/nodemailer": "^6.4.14",
+		"@types/uuid": "^9.0.7",
+		"@types/validator": "^13.11.7",
+		"nodemon": "^3.0.2",
+		"typescript": "^5.3.2"
+	}
+}
